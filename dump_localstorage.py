@@ -8,7 +8,7 @@ from local_storage import LocalStorage
 
 url = "https://web.telegram.org/a/"
 
-name_file = input('Inter file name to dumb:')
+name_file = input('Inter file name to dump:')
 
 ua = UserAgent()
 user_agent = ua.random
