@@ -1,3 +1,4 @@
+Mannual
 1. Run dump_localstorage.py
 2. Inter a name for the dump file
 3. Wait for the opening of the telegram
