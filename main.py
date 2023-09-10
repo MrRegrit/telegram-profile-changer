@@ -3,7 +3,6 @@ import time
 
 from fake_useragent import UserAgent
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
 from local_storage import LocalStorage
@@ -17,12 +16,9 @@ url = "https://web.telegram.org/a/"
 ua = UserAgent()
 user_agent = ua.random
 
-service = Service('/tg_bot/chromedriver')
-
 opts = webdriver.ChromeOptions()
 opts.add_argument(f"user-agent={user_agent}")
 opts.add_argument('--no-sandbox')
-opts.add_argument('--headless')
 
 driver = webdriver.Chrome(options=opts)
 
